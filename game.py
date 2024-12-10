@@ -21,6 +21,7 @@ def play():
         state.print()
 
         if state.game_over():
+            state.print()
             print("Player one won!")
             break
 
@@ -37,6 +38,7 @@ def play():
         mcts.move(move)
 
         if state.game_over():
+            state.print()
             print("Player two won!")
             break
 
