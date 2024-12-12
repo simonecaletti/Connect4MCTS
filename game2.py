@@ -40,6 +40,9 @@ def play():
             if state.game_over():
                 #state.print()
                 print("Player one won!")
+                print("\n")
+
+                input("Press enter to close...")
                 break
 
             print("Thinking...")
@@ -57,6 +60,9 @@ def play():
             if state.game_over():
                 state.print()
                 print("Player two won!")
+                print("\n")
+
+                input("Press enter to close...")
                 break
 
     elif istart == 2:
@@ -83,6 +89,9 @@ def play():
             if state.game_over():
                 state.print()
                 print("Player one won!")
+                print("\n")
+
+                input("Press enter to close...")
                 break
 
             user_move = int(input("Enter a move: "))
@@ -98,6 +107,9 @@ def play():
             if state.game_over():
                 #state.print()
                 print("Player two won!")
+                print("\n")
+
+                input("Press enter to close...")
                 break
 
     else:
