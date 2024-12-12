@@ -1,10 +1,18 @@
 from ConnectState import ConnectState
 from mcts import MCTS
+import os
 
 
 def play():
     state = ConnectState()
     mcts = MCTS(state)
+    
+    user = os.environ.get('USER', os.environ.get('USERNAME'))
+    print("#########################################")
+    print("Hello {}, this is a Connect4 game exploiting".format(user))
+    print("a Monte Carlo Tree Search method.")
+    print("Please enjoy the game!")
+    print("#########################################")
 
     while not state.game_over():
         print("Current state:")
