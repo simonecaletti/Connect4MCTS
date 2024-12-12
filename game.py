@@ -8,6 +8,7 @@ def play():
     mcts = MCTS(state)
     
     user = os.environ.get('USER', os.environ.get('USERNAME'))
+    os.system('color')
     print("#########################################")
     print("Hello {}, this is a Connect4 game exploiting".format(user))
     print("a Monte Carlo Tree Search method.")

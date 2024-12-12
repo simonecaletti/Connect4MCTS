@@ -1,7 +1,7 @@
 from copy import deepcopy
 import numpy as np
 from meta import GameMeta
-
+from termcolor import colored
 
 class ConnectState:
     def __init__(self):
@@ -114,7 +114,7 @@ class ConnectState:
 
         for row in range(GameMeta.ROWS):
             for col in range(GameMeta.COLS):
-                print('| {} '.format('X' if self.board[row][col] == 1 else 'O' if self.board[row][col] == 2 else ' '), end='')
+                print('| {} '.format(colored('X', 'green') if self.board[row][col] == 1 else colored('O', 'red') if self.board[row][col] == 2 else ' '), end='')
             print('|')
 
         print('=============================')
