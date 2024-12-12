@@ -30,7 +30,7 @@ def play():
         state.print()
 
         if state.game_over():
-            state.print()
+            #state.print()
             print("Player one won!")
             break
 
